@@ -71,11 +71,20 @@ body, html {
 }
 
 .home-background {
-    background-image: url('images/bangko.jpg'); /* Background image specific to home page */
+    background-image: url('images/bangko.jpg'); /* Background image specific to the home page */
     background-size: cover; /* Cover ensures the background image covers the entire viewport */
-    background-position: center; /* Center the background image */
+    background-position: center; /* Center the background image optimally */
     background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Ensures at least full viewport height coverage */
 }
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+    .home-background {
+        background-position: center; /* Adjust the position for better focus on important parts */
+    }
+}
+
 /* Styles for the menu page */
 .menu-page {
     background-color: #f4e4b1; /* Light yellow background */
