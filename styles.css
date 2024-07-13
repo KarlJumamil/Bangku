@@ -43,7 +43,8 @@ body, html {
     text-align: center;
     margin-top: 100px; /* Adjust based on navbar height */
     padding: 20px;
-    background: white; /* White background for the content area */
+    background: rgb(248, 248, 247); /* White background for the content area */
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     max-width: 600px; /* Restricting the width for readability */
@@ -123,7 +124,13 @@ h1 {
     background-repeat: no-repeat; /* Prevents the image from repeating */
     min-height: 100vh; /* Ensures at least full viewport height coverage */
 }
-
+.home-background2 {
+    background-image: url('images/bangko2.jpg'); /* Background image specific to the home page */
+    background-size: cover; /* Cover ensures the background image covers the entire viewport */
+    background-position: center; /* Center the background image optimally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Ensures at least full viewport height coverage */
+}
 /* Adjustments for mobile devices */
 @media (max-width: 768px) {
     .home-background {
