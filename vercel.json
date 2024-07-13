@@ -1,19 +1,18 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "home.html",
-        "use": "@vercel/node",
-        "config": {
-          "includeFiles": ["dist/**"]
-        }
+  "version": 2,
+  "builds": [
+    {
+      "src": "home.html",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["dist/**"]
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "home.html"
-      }
-    ]
-  }
-  
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/home.html"
+    }
+  ]
+}
