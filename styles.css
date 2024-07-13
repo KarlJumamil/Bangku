@@ -132,3 +132,18 @@ iframe {
     font-size: 40px;
     margin-top: -75px;
 }
+.social-media-links {
+    text-align: center; /* Center aligns the icons */
+    margin-top: 20px; /* Adds some space above the social media links */
+}
+
+.social-media-links a {
+    margin: 0 10px; /* Space between icons */
+    display: inline-block; /* Keeps icons in line */
+}
+
+.social-media-links img {
+    width: 40px; /* Adjust size accordingly */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Aligns icons vertically if next to text or other elements */
+}
