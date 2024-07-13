@@ -96,12 +96,15 @@ body, html {
 }
 
 .menu-image {
-    max-width: 65%; /* Allows the image to fill the width of its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Block-level to allow margin auto */
-    margin: 100px auto 20px; /* Center the image horizontally and add space around */
-    border: 1px solid #ccc; /* Light border around the image */
+    width: 100%; /* Ensures the image scales with the width of its container */
+    max-width: 600px; /* Maximum width the image can expand to */
+    height: auto; /* Keeps the image's height proportional to its width */
+    display: block; /* Makes the image a block element, which helps with centering */
+    margin: 100px auto 20px; /* Centers the image horizontally and adds vertical spacing */
+    border: 1px solid #ccc; /* Adds a subtle border for visual distinction */
+    object-fit: contain; /* Ensures the image is scaled properly within its bounds without stretching */
 }
+
 
 iframe {
     width: 100%; /* Makes the iframe full width */
