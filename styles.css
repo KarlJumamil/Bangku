@@ -78,17 +78,17 @@ body, html {
 }
 /* Styles for the menu page */
 .menu-page {
-    background-color: #fff9e6; /* Light yellow background */
+    background-color: #f4e4b1; /* Light yellow background */
     padding: 10px; /* Padding around the edges */
     box-sizing: border-box; /* Padding included in the width/height calculations */
     overflow-y: auto; /* Enables vertical scrolling if the content is taller than the screen */
 }
 
 .menu-image {
-    max-width: 65%; /* Allows the image to fill the width of its container */
+    max-width: 100%; /* Allows the image to fill the width of its container */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Block-level to allow margin auto */
-    margin: 100px auto 20px; /* Center the image horizontally and add space around */
+    margin: 450px auto 20px; /* Center the image horizontally and add space around */
     border: 1px solid #ccc; /* Light border around the image */
 }
 
