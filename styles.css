@@ -41,7 +41,7 @@ body, html {
 
 .order-container {
     text-align: center;
-    margin-top: 100px; /* Adjust based on navbar height and desired spacing */
+    margin-top: 50px; /* Adjust based on navbar height and desired spacing */
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity for a light transparency */
     border-radius: 10px;
@@ -50,7 +50,9 @@ body, html {
     max-width: 400px; /* Ensures the container does not get too wide on larger screens */
     margin-left: auto; /* Centers the container */
     margin-right: auto; /* Centers the container */
+    transform: translateY(-40px);
 }
+
 
 .order-link {
     display: block;
@@ -112,4 +114,18 @@ iframe {
     iframe {
         height: 30vh; /* Smaller height on smaller devices */
     }
+}
+.order-container h1:first-child {
+    font-weight: bold; /* Makes the text bold */
+    color: #FFD700; /* Sets the text color to yellow */
+    padding: 0px;
+    background-color: transparent; /* Ensures the background is transparent or set it to a specific color */
+    text-shadow: -2px -2px 0 #000,  
+    2px -2px 0 #000,
+   -2px  2px 0 #000,
+    2px  2px 0 #000; /* Adds a black shadow to create a bold outer glow effect */
+    border-radius: 5px;
+    transform: translateY(-0px);
+    font-size: 40px;
+    margin-top: -75px;
 }
