@@ -92,3 +92,15 @@ body, html {
     border: 1px solid #ccc; /* Light border around the image */
 }
 
+iframe {
+    width: 100%; /* Makes the iframe full width */
+    height: 50vh; /* Adjusts the height to 50% of the viewport height, adjust as needed */
+    border: 0; /* Removes the border around the iframe */
+}
+
+/* Additional responsiveness for small devices */
+@media (max-width: 600px) {
+    iframe {
+        height: 30vh; /* Smaller height on smaller devices */
+    }
+}
