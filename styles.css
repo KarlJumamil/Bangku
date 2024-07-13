@@ -85,10 +85,10 @@ body, html {
 }
 
 .menu-image {
-    max-width: 100%; /* Allows the image to fill the width of its container */
+    max-width: 65%; /* Allows the image to fill the width of its container */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Block-level to allow margin auto */
-    margin: 450px auto 20px; /* Center the image horizontally and add space around */
+    margin: 100px auto 20px; /* Center the image horizontally and add space around */
     border: 1px solid #ccc; /* Light border around the image */
 }
 
