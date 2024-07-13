@@ -39,6 +39,51 @@ body, html {
     color: #ff6347;
 }
 
+.content {
+    text-align: center;
+    margin-top: 100px; /* Adjust based on navbar height */
+    padding: 20px;
+    background: white; /* White background for the content area */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Restricting the width for readability */
+    width: 90%; /* Responsive width */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.social-media-links {
+    text-align: center; /* Center aligns the icons */
+    margin-top: 20px; /* Adds some space above the social media links */
+}
+
+.social-media-links p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.social-media-links a {
+    margin: 0 10px; /* Space between icons */
+    display: inline-block; /* Keeps icons in line */
+}
+
+.social-media-links img {
+    width: 40px; /* Adjust size accordingly */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Aligns icons vertically if next to text or other elements */
+}
+
 .order-container {
     text-align: center;
     margin-top: 50px; /* Adjust based on navbar height and desired spacing */
@@ -52,7 +97,6 @@ body, html {
     margin-right: auto; /* Centers the container */
     transform: translateY(-40px);
 }
-
 
 .order-link {
     display: block;
@@ -105,7 +149,6 @@ body, html {
     object-fit: contain; /* Ensures the image is scaled properly within its bounds without stretching */
 }
 
-
 iframe {
     width: 100%; /* Makes the iframe full width */
     height: 50vh; /* Adjusts the height to 50% of the viewport height, adjust as needed */
@@ -118,6 +161,7 @@ iframe {
         height: 30vh; /* Smaller height on smaller devices */
     }
 }
+
 .order-container h1:first-child {
     font-weight: bold; /* Makes the text bold */
     color: #FFD700; /* Sets the text color to yellow */
@@ -131,19 +175,4 @@ iframe {
     transform: translateY(-0px);
     font-size: 40px;
     margin-top: -75px;
-}
-.social-media-links {
-    text-align: center; /* Center aligns the icons */
-    margin-top: 20px; /* Adds some space above the social media links */
-}
-
-.social-media-links a {
-    margin: 0 10px; /* Space between icons */
-    display: inline-block; /* Keeps icons in line */
-}
-
-.social-media-links img {
-    width: 40px; /* Adjust size accordingly */
-    height: auto; /* Maintain aspect ratio */
-    vertical-align: middle; /* Aligns icons vertically if next to text or other elements */
 }
