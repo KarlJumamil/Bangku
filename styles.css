@@ -157,7 +157,7 @@ h1 {
 }
 
 iframe {
-    width: 100%; /* Makes the iframe full width */
+    width: 100%; 
     height: 50vh; /* Adjusts the height to 50% of the viewport height, adjust as needed */
     border: 0; 
 }
