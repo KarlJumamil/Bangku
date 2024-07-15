@@ -151,7 +151,7 @@ h1 {
     max-width: 600px; /* Maximum width the image can expand to */
     height: auto; /* Keeps the image's height proportional to its width */
     display: block; /* Makes the image a block element, which helps with centering */
-    margin: 200px auto 20px; /* Centers the image horizontally and adds vertical spacing */
+    margin: 10px auto 20px; /* Centers the image horizontally and adds vertical spacing */
     border: 1px solid #ccc; /* Adds a subtle border for visual distinction */
     object-fit: contain; /* Ensures the image is scaled properly within its bounds without stretching */
 }
