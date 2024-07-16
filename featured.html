@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .featured-images {
+            position: relative;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .featured-images img {
+            width: 100%;
+            display: none;
+        }
+        .featured-images img.active {
+            display: block;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .arrow-left {
+            left: 0;
+        }
+        .arrow-right {
+            right: 0;
+        }
+    </style>
+</head>
+<body class="home-background">
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/location">Location</a></li>
+            <li><a href="/menus">Menus</a></li>
+            <li><a href="/hours">Hours</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/featured">Featured</a></li>
+        </ul>
+    </nav>
+
+    <div class="order-container featured-images">
+        <button class="arrow arrow-left" onclick="previousImage()">&#10094;</button>
+        <img src="images/pares.jpg" alt="Featured Image 1" class="active">
+
+        <button class="arrow arrow-right" onclick="nextImage()">&#10095;</button>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.featured-images img');
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function previousImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+    </script>
+</body>
+</html>

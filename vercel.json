@@ -6,6 +6,7 @@
       { "source": "/menus", "destination": "/menus.html" },
       { "source": "/about", "destination": "/about.html" },
       { "source": "/hours", "destination": "/hours.html" },
+      { "source": "/featured", "destination": "/featured.html" },
       { "source": "/", "destination": "/index.html" }  
     ]
   }
