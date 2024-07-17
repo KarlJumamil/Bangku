@@ -163,7 +163,7 @@ h1 {
     align-items: center;
     overflow-y: scroll; /* Enables vertical scrolling */
     height: 80vh; /* Adjust based on the desired height */
-    padding: 10px;
+    padding: 50px 10px 10px; /* Adds padding to the top for visibility and horizontal padding */
     border: 1px solid #ccc;
     margin: 20px 0;
 }
